@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Variables: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <!-- 1) In this task we want you to:
+    Declare a variable called myName.
+    Initialize myName with a suitable value, on a separate line (you can use your actual name, or something else).
+    Declare a variable called myAge and initialize it with a value, on the same line.
+    Try updating the live code below to recreate the finished example: -->
+    
+  <script>
+    // Add your code here
+    const myName = 'Rev'
+    const myAge = 17
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+
+    const para1 = document.createElement('p');
+    para1.textContent = myName;
+    const para2 = document.createElement('p');
+    para2.textContent = myAge;
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+
+</html>
