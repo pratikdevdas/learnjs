@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Filtering greeting messages
+In the first exercise we'll start you off simple — we have an array of greeting card messages, but we want to sort them to list just the Christmas messages. We want you to fill in a conditional test inside the if( ... ) structure, to test each string and only print it in the list if it is a Christmas message.
+
+Think about how you could test whether the message in each case is a Christmas message. What string is present in all of those messages, and what method could you use to test whether it is present?
+
+ -->
+    <script>
+      const list = document.querySelector(".output ul");
+      list.innerHTML = "";
+      const greetings = [
+        "Happy Birthday!",
+        "Merry Christmas my love",
+        "A happy Christmas to all the family",
+        "You're all I want for Christmas",
+        "Get well soon",
+      ];
+
+      for (let greeting of greetings) {
+        // Your conditional test needs to go inside the parentheses
+        // in the line below, replacing what's currently there
+        if (greeting.includes("Christmas")) {
+          const listItem = document.createElement("li");
+          listItem.textContent = greeting;
+          list.appendChild(listItem);
+        }
+      }
+    </script>
+  </body>
+</html>

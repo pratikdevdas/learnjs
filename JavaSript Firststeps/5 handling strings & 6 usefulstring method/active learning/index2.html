@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Fixing capitalization
+In this exercise we have the names of cities in the United Kingdom, but the capitalization is all messed up. We want you to change them so that they are all lower case, except for a capital first letter. A good way to do this is to:
+
+Convert the whole of the string contained in the city variable to lower case and store it in a new variable.
+Grab the first letter of the string in this new variable and store it in another variable.
+Using this latest variable as a substring, replace the first letter of the lowercase string with the first letter of the lowercase string changed to upper case. Store the result of this replace procedure in another new variable.
+Change the value of the result variable to equal to the final result, not the city. -->
+<script>
+    const list = document.querySelector('.output ul');
+list.innerHTML = '';
+const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+for (let city of cities) {
+  // write your code just below here
+	const random = city.toLowerCase();
+	const slicer = random.slice(1);
+  const result = random[0].toUpperCase() + slicer;
+  const listItem = document.createElement('li');
+  listItem.textContent = result;
+  list.appendChild(listItem);
+}
+
+</script>
+</body>
+</html>
