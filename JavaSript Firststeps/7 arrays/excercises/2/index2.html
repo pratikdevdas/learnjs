@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Now let's move on to another task. Here you are provided with a string to work with. We'd like you to:
+
+Convert the string into an array, removing the + characters in the process. Save the result in a variable called myArray.
+Store the length of the array in a variable called arrayLength.
+Store the last item in the array in a variable called lastItem.
+Try updating the live code below to recreate the finished example:
+
+ -->
+    <script>
+      // Add your code here
+
+      let myString = "Ryu+Ken+Chun-Li+Cammy+Guile+Sakura+Sagat+Juri";
+      const myArray = myString.split("+");
+      const arrayLength = myArray.length;
+      const lastItem = myArray[arrayLength - 1];
+      // Don't edit the code below here!
+
+      section.innerHTML = " ";
+      let para1 = document.createElement("p");
+      para1.textContent = `Array: ${myArray}`;
+
+      let para2 = document.createElement("p");
+      para2.textContent = `The length of the array is ${arrayLength}.`;
+
+      let para3 = document.createElement("p");
+      para3.textContent = `The last item in the array is "${lastItem}".`;
+
+      section.appendChild(para1);
+      section.appendChild(para2);
+      section.appendChild(para3);
+    </script>
+  </body>
+</html>
