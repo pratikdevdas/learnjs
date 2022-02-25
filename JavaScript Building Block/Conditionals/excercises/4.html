@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- For the final task you are given four variables:
+
+machineActive — contains an indicator of whether the login machine is switched on or not (true/false).
+pwd — Contains the user's login password.
+machineResult — begins uninitialized, but is later used to store a response that will be printed to the output panel, letting the user know whether the machine is switched on.
+pwdResult — begins uninitialized, but is later used to store a response that will be printed to the output panel, letting the user know whether their login attempt was successful.
+We'd like you to create an if...else structure that checks whether the machine is switched on and puts a message into the machineResult variable telling the user whether it is on or off.
+
+If the machine is on, we also want a second conditional to run that checks whether the pwd is equal to cheese. If so, it should assign a string to pwdResult telling the user they logged in successfully. If not, it should assign a different string to pwdResult telling the user their login attempt was not successful. We'd like you to do this in a single line, using something that isn't an if ... else structure.
+
+Try updating the live code below to recreate the finished example: -->
+    <script>
+      let machineActive = true;
+      let pwd = "cheese";
+
+      let machineResult;
+      let pwdResult;
+
+      // Add your code here
+
+      if (machineActive) {
+        machineResult = "machine is switched on";
+
+        pwdResult =
+          pwd === "cheese" ? "loggin in sucessfully" : "login not successful";
+      }
+
+      // Don't edit the code below here!
+
+      section.innerHTML = " ";
+      let para1 = document.createElement("p");
+      let para2 = document.createElement("p");
+
+      para1.textContent = machineResult;
+      para2.textContent = pwdResult;
+
+      section.appendChild(para1);
+      section.appendChild(para2);
+    </script>
+  </body>
+</html>

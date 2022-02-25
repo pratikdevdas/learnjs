@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- In this task you are provided with two variables:
+
+season — contains a string that says what the current season is.
+response — begins uninitialized, but is later used to store a response that will be printed to the output panel.
+We want you to create a conditional that checks whether season contains the string "summer", and if so assigns a string to response that gives the user an appropriate message about the season. If not, it should assign a generic string to response that tells the user we don't know what season it is.
+
+To finish off, you should then add another test that checks whether season contains the string "winter", and again assigns an appropriate string to response.
+
+Try updating the live code below to recreate the finished example: -->
+    <script>
+      let season = "winter";
+      let response;
+
+      // Add your code here
+      if (season === "summer") {
+        response = `${season} season`;
+      } else if (season === "winter") {
+        response = `${season} season`;
+      } else {
+        response = `unknown`;
+      }
+
+      // Don't edit the code below here!
+
+      section.innerHTML = " ";
+      let para1 = document.createElement("p");
+      para1.textContent = response;
+      section.appendChild(para1);
+    </script>
+  </body>
+</html>

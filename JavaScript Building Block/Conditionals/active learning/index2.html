@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- In this example, you are going to take the ternary operator example we saw earlier and convert the ternary operator into a switch statement to allow us to apply more choices to the simple website. Look at the <select> — this time you'll see that it has not two theme options, but five. You need to add a switch statement just underneath the // ADD SWITCH STATEMENT comment:
+
+It should accept the choice variable as its input expression.
+For each case, the choice should equal one of the possible <option> values that can be selected, that is, white, black, purple, yellow, or psychedelic.
+For each case, the update() function should be run, and be passed two color values, the first one for the background color, and the second one for the text color. Remember that color values are strings, so need to be wrapped in quotes.
+If you make a mistake, you can always reset the example with the "Reset" button. If you get really stuck, press "Show solution" to see a solution. -->
+    <script>
+      const select = document.querySelector("select");
+      const html = document.querySelector(".output");
+
+      select.addEventListener("change", () => {
+        const choice = select.value;
+
+        // ADD CONDITIONAL HERE
+        switch (choice) {
+          case "black":
+            update("black", "white");
+            break;
+          case "purple":
+            update("purple", "yellow");
+            break;
+          case "yellow":
+            update("yellow", "purple");
+            break;
+          default:
+            update("white", "black");
+            break;
+        }
+      });
+
+      function update(bgColor, textColor) {
+        html.style.backgroundColor = bgColor;
+        html.style.color = textColor;
+      }
+    </script>
+  </body>
+</html>
