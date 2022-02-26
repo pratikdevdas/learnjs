@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- In the second task you are already provided with two calculations, with the results stored in the variables result and result2. But these results aren't what we want; you'll need to take the calculations and change them to give us what we want.
+
+What do we want? After multiplying the two results together and formatting the result to 2 decimal places, the final result should be 10.42.
+
+Try updating the live code below to recreate the finished example, following these steps:
+
+Write a calculation that multiplies result and result2 together and assigns the result back to result. This will require assignment shorthand.
+Write a line of code that takes result and formats it to 2 decimal places, storing the result of this in a variable called finalResult.
+Check the data type of finalResult using typeof; you'll probably see that it is actually of string type! Write a line of code that converts it to a number type, storing the result in a variable called finalNumber.
+The value of finalNumber needs to be 10.42. Go back and update the original calculations you were provided with so that they give this final result. Don't update the numbers or the operators.  -->
+    <script>
+      // Final result should be 10.42
+      // Add/update your code here
+
+      let result = 5.21;
+      let result2 = 1 + 1;
+      result *= result2;
+      const finalNumber = result.toFixed(2);
+      const finalResult = Number(finalNumber);
+      // Don't edit the code below here!
+
+      section.innerHTML = " ";
+      const para1 = document.createElement("p");
+      para1.textContent = `Your finalResult is ${result}`;
+      const para2 = document.createElement("p");
+      const finalNumberCheck =
+        isNaN(finalNumber) === false
+          ? "finalNumber is a number type. Well done!"
+          : `Ooops! finalNumber is not a number.`;
+      para2.textContent = finalNumberCheck;
+
+      section.appendChild(para1);
+      section.appendChild(para2);
+    </script>
+  </body>
+</html>
