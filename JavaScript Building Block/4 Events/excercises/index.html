@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <style></style>
+  </head>
+  <!-- In our first events-related task, you need to create a simple event handler that causes the text inside the button (btn) to change when it is clicked on, and change back when it is clicked again.
+
+The HTML should not be changed; just the JavaScript.
+
+Try updating the live code below to recreate the finished example: -->
+  <body>
+    <button class="off">Machine is off</button>
+
+    <script>
+      const btn = document.querySelector(".off");
+
+      // Add your code here
+      function changeName() {
+        if (btn.textContent === "Machine is off") {
+          btn.textContent = "kk";
+        } else if (btn.textContent === "kk") {
+          btn.textContent = "Machine is off";
+        }
+      }
+
+      // Add your code here
+      btn.addEventListener("click", changeName);
+    </script>
+  </body>
+</html>

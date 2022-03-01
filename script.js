@@ -10,3 +10,4 @@ let checkName = "Ilya";
 alert(`hello${1}`)
 alert(`hello${"name"}`)
 alert(`hello${checkName}`)
+console.log('hi')
