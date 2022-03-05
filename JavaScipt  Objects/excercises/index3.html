@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- In this task, we want you to return to the cat object literal from Task 1. We want you to rewrite the greeting() method so that it logs "Hello, said Bertie the Cymric." to the browser's console, but in a way that will work across any cat object of the same structure, regardless of its name or breed.
+
+When you are done, write your own object called cat2, which has the same structure, exactly the same greeting() method, but a different name, breed, and color.
+
+Call both greeting() methods to check that they log appropriate greetings to the console.
+
+Try updating the live code below to recreate the finished example: -->
+    <script>
+        const cat = {
+  name : 'Bertie',
+  breed : 'Cymric',
+  color : 'white',
+  greeting: function() {
+    console.log(`Hello its ${this.name} said the ${this.breed}`);
+  }
+}
+
+const cat2 = {
+  name : 'Leon',
+  breed : 'Dobbie',
+  color : 'white',
+  greeting: function() {
+    console.log(`Hello its ${this.name} said the ${this.breed}`);
+  }
+}
+    cat.greeting()
+cat2.greeting()
+    </script>
+</body>
+</html>
