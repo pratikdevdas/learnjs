@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- In our next task, we want you to have a go at creating your own object literal to represent one of your favorite bands. The required properties are:
+
+name: A string representing the band name.
+nationality: A string representing the country the band comes from.
+genre: What type of music the band plays.
+members: A number representing the number of members the band has.
+formed: A number representing the year the band formed.
+split: A number representing the year the band split up, or false if they are still together.
+albums: An array representing the albums released by the band. Each array item should be an object containing the following members:
+name: A string representing the name of the album.
+released: A number representing the year the album was released.
+Include at least two albums in the albums array.
+
+Once you've done this, you should then write a string to the variable bandInfo, which will contain a small biography detailing their name, nationality, years active, and style, and the title and release date of their first album.
+
+Try updating the live code below to recreate the finished example: -->
+    <script>
+      let bandInfo;
+
+      // Put your code here
+
+      const band = {
+        name: "Beatles",
+        nationality: "America",
+        genre: "Rock",
+        formed: 1980,
+        members: 6,
+        split: 2014,
+        albums: ["Jam", "2000"],
+      };
+
+      bandInfo = `The ${band.name} was a  ${band.nationality} band ${band.genre} consisting of ${band.members} members and was formed in ${band.formed} and splitted in ${band.split}. Their best album was ${band.albums[0]} published in ${band.albums[1]}.`;
+
+      // Don't edit the code below here
+
+      let para1 = document.createElement("p");
+      para1.textContent = bandInfo;
+      section.appendChild(para1);
+    </script>
+  </body>
+</html>
